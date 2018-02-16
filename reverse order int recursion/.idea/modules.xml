@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaReview Questions Exercise/JavaReview Questions Exercise.iml" filepath="$PROJECT_DIR$/JavaReview Questions Exercise/JavaReview Questions Exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/reverse order int recursion.iml" filepath="$PROJECT_DIR$/reverse order int recursion.iml" />
-    </modules>
-  </component>
-</project>
