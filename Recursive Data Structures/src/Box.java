@@ -8,7 +8,7 @@ import java.awt.Graphics;
  * <p>
  * A box is a rectangle that may contain another box
  * </p>
- * 
+ *
  * @author CSC 143
  */
 
@@ -24,7 +24,7 @@ public class Box {
 
 	/**
 	 * Creates a box of a given width, height, location and color.
-	 * 
+	 *
 	 * @param centerX
 	 *            the x coordinate of the center of the box.
 	 * @param centerY
@@ -56,16 +56,16 @@ public class Box {
 	 * dimensions are less than or equal to 1. The inner box has the same center
 	 * and is 10% smaller than its direct enclosing box. The inner box has the
 	 * same color as its enclosing box.
-	 * 
+	 *
 	 * @return true if the inner box could be added and false otherwise.
 	 */
 	public boolean addInnerBox() {
 		if (innerBox == null) { // base case: there is no inner box
 			// add an inner box if not too small
-			int w = width * 9 / 10; // NOT 9 / 10 * width which is always 0 // Another option: (int) (0.9 * height)
-			int h = height * 9 / 10;
-			if (w > 1 && h > 1) {
-				innerBox = new Box(centerX, centerY, h, w, color);
+			int innerWidth = width * 9 / 10; // NOT 9 / 10 * width which is always 0 // Another option: (int) (0.9 * height)
+			int innerHeight = height * 9 / 10;
+			if (innerWidth > 1 && innerHeight > 1) {
+				innerBox = new Box(centerX, centerY, innerHeight, innerWidth, color);
 				return true;
 			} else {
 				return false;
@@ -106,7 +106,7 @@ public class Box {
 
 	/**
 	 * Draws this box (and its inner boxes if any)
-	 * 
+	 *
 	 * @param g
 	 *            the graphics context to use
 	 */
@@ -123,7 +123,7 @@ public class Box {
 	/**
 	 * Returns a string representation of this box, namely the location of its
 	 * center, its width and height, its color and its number of inner boxes.
-	 * 
+	 *
 	 * @return a string representation of this box.
 	 */
 	public String toString() {
