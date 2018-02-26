@@ -148,11 +148,11 @@ public class MyArrayList<E> implements MyList<E> {
     public boolean remove(Object o) {
         // easy with indexOf and remove
         int index = indexOf(o);
-        return index != -1 ? remove(index) : false;
+        return index != -1 ? remove(index) : false; // return index != 1 && remove(index);
     }
 
     /**
-     * Adds the specified object at the specified location
+     * Adds the specified object at the specified location // equivalent to insert
      */
     public boolean add(int index, E o) {
         if (index < 0 || index > size) {
@@ -175,7 +175,7 @@ public class MyArrayList<E> implements MyList<E> {
     public boolean equals(Object o) {
         if (o instanceof MyArrayList) {
             // o is an ArrayList
-            MyArrayList<E> list = (MyArrayList<E>) o;
+            MyArrayList<E> list = (MyArrayList<E>) o; // Write <E> or check assignment
             // if the number of elements is not the same, this and o are not the
             // same
             if (list.size != size) {
@@ -194,7 +194,7 @@ public class MyArrayList<E> implements MyList<E> {
                     if (list.items[i] != null) {
                         return false;
                     }
-                } else if (!items[i].equals(list.items[i])) {
+                } else if (!items[i].equals(list.items[i])) { // if (!list.items[i].equals(items[i])) presents a problem, because we only know that items[i] isn't null
                     return false;
                 }
             }
