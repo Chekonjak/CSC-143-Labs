@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/COMPLEXITY/COMPLEXITY.iml" filepath="$PROJECT_DIR$/COMPLEXITY/COMPLEXITY.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LABS.iml" filepath="$PROJECT_DIR$/.idea/LABS.iml" />
       <module fileurl="file://$PROJECT_DIR$/List Example/List Example.iml" filepath="$PROJECT_DIR$/List Example/List Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
     </modules>
   </component>
 </project>
